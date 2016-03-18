@@ -11,4 +11,4 @@ CSS3
 
 ## Author
 
-batu.zaya.89@gmail.com
+deniz.aslan331@hotmail.com
