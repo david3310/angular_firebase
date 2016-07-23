@@ -11,4 +11,3 @@ CSS3
 
 ## Author
 
-<b>David</b>
