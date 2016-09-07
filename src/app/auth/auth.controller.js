@@ -8,9 +8,7 @@
   AuthController.$inject = ['$location', 'authService', 'JudgeService', 'FIREBASE_URL', '$rootScope', '$sessionStorage'];
 
   function AuthController($location, authService, JudgeService, FIREBASE_URL, $rootScope, $sessionStorage) {
-    
     var vm = this;
-
     vm.register = register;
     vm.login = login;
 
@@ -28,7 +26,6 @@
     }
 
     function login(user) {
-
       return authService.login(user)
         .then(function(response) {
           var foundUser = authService.getUserByEmail(user.email);
@@ -51,7 +48,6 @@
                 }
               });
           });
-          
           return response;
         })
         .catch(function(error) {
