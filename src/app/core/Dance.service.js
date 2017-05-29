@@ -6,7 +6,6 @@
     .factory('DanceService', DanceService);
 
   DanceService.$inject = ['$firebaseArray', 'firebaseDataService'];
-
   function DanceService($firebaseArray, firebaseDataService) {
 
     var service = {
@@ -16,8 +15,6 @@
     };
 
     return service;
-
-    ////////////
 
     function getDancies() {
       return $firebaseArray(firebaseDataService.dances);
@@ -33,7 +30,6 @@
                                               result: Dance.result,
                                               state: Dance.state});
     }
-
     function Dance() {
       this.name = '';
       this.dancetype = [];
@@ -43,5 +39,4 @@
       this.result = [];
     }
   }
-
 })();
